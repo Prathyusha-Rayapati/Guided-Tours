@@ -166,6 +166,9 @@ $(document).ready(function() {
             $(".menu-btn").on("click", function() {
                 $(".nav-links").toggleClass("open"); // Toggle menu visibility on button click
             });
+             $(document).on("click", ".nav-links li a", function() {
+                $(".nav-links").removeClass("open");
+            });
         }
     }
 
