@@ -158,5 +158,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
   });
+$(document).ready(function() {
+    // Function to handle collapse for smaller screens
+    function handleCollapse() {
+        if (window.screen.width <= 1130) {
+            $(".nav-links").removeClass("open"); // Ensure menu is closed initially
+            $(".menu-btn").on("click", function() {
+                $(".nav-links").toggleClass("open"); // Toggle menu visibility on button click
+            });
+        }
+    }
+
+    // Call handleCollapse initially and on window resize
+    handleCollapse();
+    $(window).resize(handleCollapse);
+});
 
 window.addEventListener("scroll", updateNav);
