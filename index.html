@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guided Tours</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body
+        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+    >
+        <!--navbar-->
+        <nav class="navbar glass">
+           
+                <a href="#home" class="nav-link">
+                    <h1 class="logo">
+                        T
+                        <img class="img2" src="./img/mountain.png" alt="Logo" width="100" height="100" />
+                        urs
+                    </h1>
+                </a>
+        
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" id="pri" class="active cir_border">Home</a>
+                </li>
+                <li><a href="#events" id="sec" class="cir_border">Locations</a></li>
+                <li>
+                    <a href="#explore" id="tri" class="cir_border">Explore</a>
+                </li>
+                <li>
+                    <a href="#tours" id="quad" class="cir_border">Future Locations</a>
+                </li>
+                <li><a href="#about" id="quint" class="cir_border">About</a></li>
+                <li>
+                    <a href="#contact" id="hept" class="cir_border">Contact</a>
+                </li>
+                <li>
+                    <div>
+                        <input
+                            type="checkbox"
+                            class="checkbox dark"
+                            id="checkbox"
+                        />
+                        <label for="checkbox" class="label">
+                            <i class="fa fa-moon-o"></i>
+                            <i class="fa fa-sun-o"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+        </nav>
+</ul>
+        </nav>
+        <!--navbar-->
+
+        <header id="home">
+            <div class="header-content">
+                <img src="./img/mountain.png" alt="Image 4" />
+                <h2 id="quote">Get GUIDED TODAY</h2>
+                <div class="line"></div>
+                <h2>CALL TODAY  (251) 376 -8090</h2>
+               
+                <a
+                    href="#about"
+                    class="ctn"
+                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                    >Learn more</a
+                >
+            </div>
+        </header>
+
+        <!--Events-->
+        <section class="events" id="events">
+            <div class="container">
+                <div class="title">
+                    <h1 class="dark">Guided Locations</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <article class="card">
+                        <img class="card-img" src="./img/img1.png" />
+                        <h4 class="dark">New York City</h4>
+                        <p class="font-color">
+                            The iconic skyline of NYC boasts the Statue of Liberty, Central Park,
+                             and Broadway, making it a cultural and financial hub.
+                        </p>
+                       
+                    </article>
+                    <article class="card">
+                        <img src="./img/img2.jpeg" />
+                        <h4 class="dark">Niagara Falls</h4>
+                        <p class="font-color">
+                            One of the most famous waterfalls in the world, Niagara Falls offers boat tours and stunning views from both the US and Canada.
+                        </p>
+                       
+                    </article>
+                    <article class="card">
+                        <img src="./img/img3.png" />
+                        <h4 class="dark">Grand Canyon, Arizona</h4>
+                        <p class="font-color">
+                            Carved by the Colorado River, the Grand Canyon offers breathtaking vistas and unparalleled hiking opportunities.
+                        </p>
+                        
+                    </article>
+                    <article class="card">
+                        <img src="./img/img4.png" />
+                        <h4 class="dark">Yellowstone Park, Wyoming</h4>
+                        <p class="font-color">
+                            Home to geysers, hot springs, and diverse wildlife, Yellowstone is the oldest national park in the world.
+                        </p>
+                       
+                    </article>
+                    <article class="card">
+                        <img src="./img/img5.png" />
+                        <h4 class="dark">San Francisco, California</h4>
+                        <p class="font-color">
+                            Known for the Golden Gate Bridge and diverse neighborhoods, San Francisco blends natural beauty with urban charm.
+                        </p>
+                        
+                    </article>
+                    <article class="card">
+                        <img src="./img/img6.png" />
+                        <h4 class="dark">Las Vegas, Nevada</h4>
+                        <p class="font-color">
+                            The Entertainment Capital of the World, Las Vegas dazzles with its mega-casinos, shows, and vibrant nightlife.
+                        </p>
+                       
+                    </article>
+                    <article class="card">
+                        <img src="./img/img7.jpg" />
+                        <h4 class="dark">Mount Rushmore, SD</h4>
+                        <p class="font-color">
+                            This colossal sculpture features the faces of four U.S. presidents carved into the granite of the Black Hills.   
+                        </p>
+                        
+                    </article>
+                    
+                    <article class="card">
+                        <img src="./img/img8.jpg" />
+                        <h4 class="dark">Miami, Florida</h4>
+                        <p class="font-color">
+                            Renowned for its Art Deco architecture, white sandy beaches, and vibrant nightlife along Ocean Drive.
+                        </p>
+                       
+                    </article>
+                    <article class="card">
+                        <img src="./img/img9.jpg" />
+                        <h4 class="dark">New Orleans, Louisiana</h4>
+                        <p class="font-color">
+                            Jazz music, Creole cuisine, and historic French Quarter architecture define the unique charm of New Orleans.   
+                        </p>
+                        
+                    </article>
+                    <article class="card">
+                        <img src="./img/img10.jpg" />
+                        <h4 class="dark">Chicago</h4>
+                        <p class="font-color">
+                            The Windy City boasts world-class museums, architecture, deep-dish pizza, and stunning views from the Willis Tower Skydeck.   
+                        </p>
+                        
+                    </article>
+                    <article class="card">
+                        <img src="./img/img11.jpg" />
+                        <h4 class="dark">Boston</h4>
+                        <p class="font-color">
+                            A city rich in American history with landmarks like the Freedom Trail, Boston Tea Party Ships, and Harvard University.
+                        </p>
+                    
+                    </article>
+                    <article class="card">
+                        <img src="./img/img12.jpg" />
+                        <h4 class="dark">Seattle, Washington</h4>
+                        <p class="font-color">
+                             Famous for the Space Needle, Pike Place Market, and its coffee culture, Seattle offers stunning views of Puget Sound.
+                        </p>
+                       
+                    </article>
+                    <article class="card">
+                        <img src="./img/img13.jpg" />
+                        <h4 class="dark">Alaska</h4>
+                        <p class="font-color">
+                            With rugged wilderness, glaciers, and abundant wildlife, Alaska is a paradise for nature lovers and adventurers. 
+                        </p>
+                        
+                    </article>
+                    <article class="card">
+                        <img src="./img/img14.jpg" />
+                        <h4 class="dark">Washington, D.C</h4>
+                        <p class="font-color">
+                            The capital city of the United States features iconic landmarks like the White House, Capitol Hill, and Smithsonian museums.
+                        </p>
+                        
+                    </article>
+                   
+            
+                    <article class="card">
+                        <img src="./img/img15.jpg" />
+                        <h4 class="dark">Sedona, Arizona</h4>
+                        <p class="font-color">
+                            Known for its red rock formations, spiritual retreats, and scenic hiking trails amidst the Coconino National Forest.
+                        </p>
+                        
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--Events-->
+
+        <!--Explore-->
+        <section class="explore" id="explore">
+            <div class="explore-container">
+                <div class="explore-content">
+                    <h2 style="color: wheat;">DISCOVER THE EXTRAORDINARY</h2>
+                    <div class="line"></div>
+                    <p>
+                        Traveling – it leaves you speechless, then turns you into a storyteller.
+                        <br />Adventure awaits just beyond the horizon.
+                    </p>
+                    <a href="#contact" class="ctn">Share your Experience</a>
+                </div>
+                <div class="top-offers">
+                    <h2 style="color: wheat; text-align: center;">Top Offers</h2>
+                    <!-- Offer 1 -->
+                    <div class="offer-card">
+                        <h4>Group Offer</h4>
+                        <p>Get 20% off on guided tours with a group of 4 or more at all locations.</p>
+                    </div>
+                    <!-- Offer 2 -->
+                    <div class="offer-card">
+                        <h4>Black Friday Sale</h4>
+                        <p>Get $50 off on all locations between Nov 1 - 10 when booked online</p>
+                    </div>
+                    <!-- Offer 3 -->
+                    <div class="offer-card">
+                        <h4>Solo Traveler Special</h4>
+                        <p>Exclusive $20 discount for solo travelers exploring Niagara Falls .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Explore-->
+
+        <!--tours-->
+        <section class="tours" id="tours">
+            <div class="container row">
+                <div class="col content-col">
+                    <h1 class="font-color">UPCOMING DESTINATION</h1>
+                    <div class="line"></div>
+                    <h2>
+                        Exclusivly from October 1, 2024
+                        </h2>
+                        
+                    </p>
+                    <a href="#" class="ctn">Learn more</a>
+                </div>
+                <div class="image-col">
+    <div class="image-gallery">
+        <div class="image-container">
+            <img src="./img/img16.jpg" alt="Image 1" />
+            <p class="image-caption">Pheonix, AZ</p>
+        </div>
+        <div class="image-container">
+            <img src="./img/img17.jpg" alt="Image 2" />
+            <p class="image-caption">San Bernadino, CA</p>
+        </div>
+        <div class="image-container">
+            <img src="./img/img18.png" alt="Image 3" />
+            <p class="image-caption">Los Angles, CA</p>
+        </div>
+        <div class="image-container">
+            <img src="./img/img19.png" alt="Image 4" />
+            <p class="image-caption">Atlanta, GA</p>
+        </div>
+    </div>
+</div>
+
+            </div>
+            <br /><br /><br /><br />
+        </section>
+        <!--tours-->
+
+        <!-- About -->
+         <section id="about">
+            <div class="title">
+                <h1 class="font-color">About Us</h1>
+                <div class="line"></div>
+            </div>
+            <br />
+            <div id="about_us">  
+                                <h3 style="  font-family: var(--ff-montserrat);  color: white;  "  >
+                                Welcome to our organization, where we specialize in providing exceptional tourist guides for over 20 captivating locations across the USA. Since our establishment in 2017, we have been dedicated to enriching travel experiences by offering insightful guides and personalized services. Whether you're exploring iconic landmarks, discovering hidden gems, or embarking on unique adventures, our mission is to make your journey memorable and hassle-free. 
+                                Join us as we continue to expand our offerings and create unforgettable travel memories.
+                                </h3>
+                                <br />                             
+                                <br />
+                                <img src="./img/icon.png" alt="Image 4" />            
+            </div>
+        </section>
+
+        <!-- contact -->
+               <section id="contact">
+            <div class="title">
+                <h1 class="font-color">Contact Us</h1>
+                <div class="line"></div>
+            </div>
+            <div class="contact_us">
+                <form id="contactForm" class="cform">
+                  <div class="crow-message">
+                    <h1 class="color">Send us a message</h1>
+                  </div>
+                  <div class="crow-in">
+                    <div class="input-group no-label">
+                      <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="input-group no-label">
+                      <input type="text" id="phoneno" name="phoneno" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="input-group no-label">
+                      <input type="email" id="email" name="email" placeholder="Your Email id" required>
+                    </div>
+                  </div>
+                  <div class="crow">
+                    <div class="input-group">
+                      <label for="location">Location</label>
+                      <select name="country" id="location">
+                        <option value="Russia"> Choose One</option>
+                        <option value="Russia">Alaska </option>
+                        <option value="India">Boston</option>
+                        <option value="Russia">Chicago </option>
+                        <option value="Russia"> Grand Canyon,AZ</option>
+                        <option value="Russia">Las Vegas, Nevada </option>
+                        <option value="Russia"> Miami, FL</option>
+                        <option value="Russia"> Mount Rushmore, SD </option>
+                        <option value="Russia"> New York City</option>
+                        <option value="Russia"> New Orleans, LA</option>
+                        <option value="Russia"> Niagara Falls</option>
+                        <option value="Russia"> San Francisco, CA </option>
+                        <option value="Russia"> Seattle, WA</option>
+                        <option value="Russia"> Seadon, AZ</option>
+                        <option value="Russia"> Washington DC</option>
+                        <option value="Russia"> Yellowstone Park, Wyoming</option>
+                       
+
+                        
+                      </select>
+                    </div>
+                  </div>
+                  <div class="crow">
+                    <div class="input-group">
+                        <label for="date">From Date</label>
+                      <input type="date" id="date" name="date" placeholder="Travel Date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="days">No. Of Days</label>
+                      <input type="number" id="days" name="days" placeholder="NO of Days" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="number">No. Of Travelers</label>
+                      <input type="number" id="members" name="members" placeholder="Travelers" required>
+                    </div>
+                  </div>
+                  <input class="crow-s" type="submit" value="Submit">
+                </form>
+               
+                <div class="cbox">
+                    <div>
+                        <p class="cbox-message">Prefer some other way ?<br>Reach us by using the details given below</p>
+                        <div class="cbox-line"></div>
+                    </div>
+                    <div class="c_boxx">
+                        <a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i> Mail: guidedtours@adventure.com</a>
+                    </div>
+                    <div class="c_boxx">
+                        <a href="tel:+91-12345-67890"><i class="fa fa-phone"></i> Phone: (251) 376-8090</a>
+                    </div>
+                    <div class="c_boxx">
+                        <a href="#"><i class="fa fa-map-marker"></i> Location: Mobile, AL</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- Include EmailJS library -->
+        <script src="script.js"></script> <!-- Link your JavaScript file for handling form submission -->
+      
+        <!-- contact  -->
+        <!-- contact  -->
+        <!-- up scroll -->
+        <i class="arrow"  onclick="topFunction()" id="upbtn"></i>
+        <!-- end -->
+        <!--footer-->
+        <section class="footer">
+            <span
+                >Prathyusha Rayapati | &#169; 2024 All rights
+                reserved.</span
+            >
+            <div class="social">
+                <li>
+                    <a
+                        href="https://prathyusha-rayapati.github.io/"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fa fa-globe"></i
+                    ></a>
+                    <a
+                        href="https://github.com/Prathyusha-Rayapati"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/prathyusha9"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fa fa-linkedin-square"></i
+                    ></a>
+                </li>
+            </div>
+        </section>
+        <!--footer-->
+
+        <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navlinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navlinks.classList.toggle("mobile-menu");
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

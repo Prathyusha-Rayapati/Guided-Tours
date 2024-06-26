@@ -1,0 +1,268 @@
+/* Mobile responsiveness design */
+@media screen and (max-width: 990px) {
+  .contact_us {
+    flex-direction: column;
+    width: 100%;
+  }
+  form,
+  .cbox {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .explore-content,
+  .top-offers {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    padding: 45px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    background: #484872;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu {
+    margin-top: 602px;
+    border-bottom-right-radius: 30%;
+  }
+
+  .nav-links li {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .containerx {
+    top: 40%;
+    bottom: 40%;
+    transform-style: preserve-3d;
+  }
+
+  #about_us .boxx > div {
+    padding: 10px; /* Add padding around each div */
+    margin-bottom: 20px; /* Add margin bottom between the divs */
+  }
+
+  .cards {
+    position: relative;
+    width: 90vw;
+    height: 100%;
+  }
+
+  #about-quad {
+    display: none;
+  }
+}
+
+/* Tours */
+.tours {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+}
+
+.content-col {
+  width: 100%;
+}
+
+#about_us p {
+  width: 70%;
+}
+
+@media screen and (max-width: 770px) {
+  #about_us p {
+    width: 85%;
+    padding-top: 7em;
+    margin: auto;
+  }
+
+  form,
+  .cbox {
+    width: 90%;
+  }
+
+  .ctn {
+    margin: auto;
+  }
+
+  .explore-content {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .explore-content .ctn {
+    margin: 40px auto;
+  }
+
+  .explore-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-offers {
+    margin-top: 30px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .explore-container {
+    width: 90%;
+  }
+
+  .explore-content,
+  .top-offers {
+    width: 100%;
+  }
+
+  .explore-content h2,
+  .top-offers h2 {
+    font-size: 1.5rem;
+  }
+
+  .explore-content p,
+  .top-offers p {
+    font-size: 0.875rem;
+  }
+
+  .explore-content .ctn {
+    font-size: 0.875rem;
+    padding: 10px 20px;
+  }
+
+  #about_us p {
+    margin: auto;
+  }
+
+  #about-quad {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .ctn {
+    padding: 13px 25px;
+  }
+
+  .c_boxx a p {
+    font-size: 17.5px;
+  }
+
+  .explore-content h2,
+  .top-offers h2 {
+    font-size: 1.2rem;
+  }
+
+  .explore-content p,
+  .top-offers p {
+    font-size: 0.75rem;
+  }
+
+  .explore-content .ctn {
+    font-size: 0.75rem;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ctn {
+    padding: 13px 25px;
+  }
+
+  .c_boxx a p {
+    font-size: 16px;
+  }
+
+  .explore-content h2,
+  .top-offers h2 {
+    font-size: 1rem;
+  }
+
+  .explore-content p,
+  .top-offers p {
+    font-size: 0.625rem;
+  }
+
+  .explore-content .ctn {
+    font-size: 0.625rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 850px) {
+  .content-col {
+    text-align: center;
+  }
+
+  .content-col .line {
+    margin: 0.5rem auto;
+  }
+
+  .content-col .ctn {
+    margin: 0 auto;
+    position: inherit;
+  }
+
+  .content-col p {
+    max-width: 75%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 1.5rem; /* Reduced gap between items */
+    padding: 0.5rem; /* Adjusted padding */
+  }
+
+  .image-caption {
+    font-size: 2rem; /* Adjusted font size for captions */
+  }
+
+  .content-col h1 {
+    font-size: calc(1.8rem + 1vw); /* Adjusted font size for headings */
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .content-col p {
+    font-size: 0.9rem; /* Adjusted font size for paragraphs */
+    max-width: 100%; /* Full width for paragraphs */
+  }
+
+  .content-col .ctn {
+    position: static; /* Remove absolute positioning on smaller screens */
+    margin-top: 1rem; /* Add margin for spacing */
+  }
+}
